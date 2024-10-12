@@ -1,0 +1,215 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    overflow-x: hidden;
+    padding-top: 20;
+    margin-top: 5%;
+}
+
+.profile_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 30%;
+    padding-top: 10px;
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #0f62fe;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .image_profile {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile_card .text-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.text-date .name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-date .school {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile_card .media_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media_buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: black;
+    text-decoration: none;
+}
+
+/* Below profile line */
+
+.resume_body_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.resume_body_summary, .resume_body_education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    font-size: 12px;
+}
+
+.resume_body_summary {
+    max-width: 750px;
+}
+
+.resume_body_education {
+    max-width: 750px;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: 425;
+    text-align: center;
+}
+
+.content {
+    padding-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 1%;
+}
+
+.content_e {
+    padding-top: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 1%;
+    color: #fdfdfd;
+}
+
+li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.experience_line p {
+    display: inline-flex;
+}
+
+.experience_line {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center elements horizontally */
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0%;
+}
+
+.job_name {
+    align-items: left;
+    width: 70%;
+    color: black;
+}
+
+.work_date {
+    align-items: right;
+    width: auto;
+    color: #fdfdfd;
+}
+
+.job_position {
+    margin-top: 0%;
+    margin-left: 0%; /* Reset left margin */
+    text-decoration: solid;
+    font-size: 15px;
+    width: 100%; /* Take up the full width of the container */
+    text-align: center; /* Center text horizontally */
+    padding-bottom: 24px;
+    color: #fdfdfd;
+}
+
+.csf {
+    padding-left: 0%;
+}
+
+.experience_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.experience_item {
+    flex: 0 0 auto;
+    min-width: 300px;
+    max-width: 300px;
+    background: 0 0 0 .56;
+    border-radius: 16px;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    padding-left: 30px;
+}
+
+/* Removed .resume_body_experience block */
